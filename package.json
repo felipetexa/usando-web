@@ -1,0 +1,20 @@
+{
+  "name": "usando-web",
+  "version": "1.0.0",
+  "description": "Utilizando fundamentos de html, express e rotas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipetexa/usando-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipetexa/usando-web/issues"
+  },
+  "homepage": "https://github.com/felipetexa/usando-web#readme"
+}
