@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/felipetexa/usando-web/issues"
   },
-  "homepage": "https://github.com/felipetexa/usando-web#readme"
+  "homepage": "https://github.com/felipetexa/usando-web#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
