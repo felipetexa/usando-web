@@ -2,6 +2,7 @@
 
 const express = require('express');
 const path = require('path') //dependencia nativa do node
+const myParser = require('body-parser')//ele fez isso pra rodar informaçoes do body no postman
 
 
 // fazer logica do servidor web
@@ -17,6 +18,11 @@ app.listen(port, () => {
     console.log('Servidor iniciado')
 })
 
+//passando Parsers e encoders
+
+app.use(myParser.json({limit: '200mb'}));
+app.use(myParser.urlencoded({limit: '200mb', extended: true}));
+
 //ouvir requisições get na rota / (trabalhar cada uma das rotas)
 
 app.get('/', (req, res) => {
@@ -30,6 +36,7 @@ app.get('/boasVindas', (req, res) => {
 })
 
 app.post('/usuario', (req, res) => {
+    console.log('Body', red.body)
     res.send('Cheguei no post')
 })
 
